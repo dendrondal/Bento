@@ -39,7 +39,7 @@ var themeOptions = {
 };
 
 // Switches out every week
-var start = new Date();
+var d = new Date();
 var t = d.getTime();
 var weeks = Math.floor(t / (604800000));
 var i = weeks % Object.keys(themeOptions).length
