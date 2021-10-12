@@ -2,15 +2,7 @@
 const themeName = document.querySelector('.theme-name p');
 const themeMsg = document.querySelector('.theme-description p');
 
-var themeInterval = window.setInterval(setTheme, 604800000);
-var index = 0
-
-function setTheme(index) {
-	var key = Object.keys(themeOptions)[index];
-	themeName.innerText = key
-	themeMsg.innerText = themeOptions[key]
-};
-
+// Add your themes here
 var themeOptions = {
 	"Gratitude": "Be extra appreciative of those around you. Say thanks more, and point out what you appreciate!",
 
@@ -44,4 +36,16 @@ var themeOptions = {
 
 	"Hand and Brain": "If you've primarily been working with your brain, try building something with your hands, and vice-versa"
 
+};
+
+// Switches out every week
+var start = new Date();
+var t = d.getTime();
+var weeks = Math.floor(t / (604800000));
+var i = weeks % Object.keys(themeOptions).length
+function setTheme(index) {
+	var key = Object.keys(themeOptions)[index];
+	themeName.innerHTML = key
+	themeMsg.innerHTML = themeOptions[key]
 }
+setTheme(i)
