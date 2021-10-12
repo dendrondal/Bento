@@ -45,7 +45,7 @@ var weeks = Math.floor(t / (604800000));
 var i = weeks % Object.keys(themeOptions).length
 function setTheme(index) {
 	var key = Object.keys(themeOptions)[index];
-	themeName.innerHTML = key
+	themeName.innerHTML = `Theme of the Week: ${key}`
 	themeMsg.innerHTML = themeOptions[key]
 }
 setTheme(i)
