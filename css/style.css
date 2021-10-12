@@ -14,9 +14,9 @@
 
     /* Image background  */
 
-    /* Uncoment this section to get the 
-    image wallpaper. You can also 
-    change the --imgcol value 
+    /* Uncoment this section to get the
+    image wallpaper. You can also
+    change the --imgcol value
     to make the filter to your own */
 
     /* --imgbg: url(/img/wal.jpg); */
@@ -35,10 +35,10 @@
 
 /* Dark theme  */
 .darktheme {
-    --accent: #186efd60;
-    --bg: #1e1f21;
-    --sbg: #2c2d31;
-    --fg: #d8dee9;
+    --accent: #fc94c1;
+    --bg: #08011a;
+    --sbg: #8338ec;
+    --fg: #15c3e9;
     --imgcol: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
